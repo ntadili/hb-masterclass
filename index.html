@@ -83,6 +83,12 @@
       padding: 11px 14px;
       border-radius: 7px;
       font-weight: 500 !important;
+      transition: transform 0.1s ease, box-shadow 0.1s ease;
+    }
+
+    .cta-button:active {
+      transform: scale(0.97);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
 
         /* ———————————————— MOBILE ADAPTATION ———————————————— */
@@ -101,6 +107,9 @@
 
       .div-image {
         width: 90%;
+        box-shadow:
+          0 60px 120px #007bff4d,
+          0 0 700px rgba(255, 255, 255, 0.05);
       }
 
       .cta-button {
