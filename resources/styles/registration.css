@@ -1,3 +1,14 @@
+/* Hide all error messages completely */
+#_form_1_ ._error,
+#_form_1_ ._error-inner,
+#_form_1_ ._form_error {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 #_form_1_ ._form-thank-you {
   color: white !important;
   width: 100%;
@@ -5,6 +16,7 @@
   border: solid 1px grey;
   padding: 10px 10px;
 }
+
 
 
 @media (max-width: 600px) {
