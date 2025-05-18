@@ -70,6 +70,27 @@
     #contador{
       margin: 17px;
     }
+
+    .image-background{
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden; /* Important for clipping */
+    }
+    .image-background img{
+      width: 100%;
+
+      object-fit: cover; /* Keeps image scaled correctly */
+  
+      /* Fade effect */
+      -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+      mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+      -webkit-mask-size: 100% 100%;
+      mask-size: 100% 100%;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;      
+    }
+    
     /* ———————————————— MOBILE ADAPTATION ———————————————— */
     @media (max-width: 768px) {
       header{
@@ -89,6 +110,10 @@
 </head>
 
 <body>
+  <div class="image-background">
+    <img src="./resources/images/image-background.png" alt="Imagen de fondo">
+  </div>
+
   <header>
     <div class="header-title">MASTERCLASS GRATUITA EN DIRECTO <br> <span style="font-weight: 600;">9 DE MAYO 19:00H</span></div>
     <h1>Te queda un último paso!</h1>
