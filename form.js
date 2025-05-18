@@ -14,6 +14,11 @@ window._show_thank_you = function(id, message, trackcmp_url, email) {
         _load_script(trackcmp_url);
     }
     if (typeof window._form_callback !== 'undefined') window._form_callback(id);
+
+    // Redirect to next page to confirm registration
+    setTimeout(function() {
+      window.location.href = "./confirmation.html";
+    }, 100); // optional delay
 };
 window._show_unsubscribe = function(id, message, trackcmp_url, email) {
     var form = document.getElementById('_form_' + id + '_'), unsub = form.querySelector('._form-thank-you');
