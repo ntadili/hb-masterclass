@@ -1,7 +1,7 @@
 /* Hide all error messages completely */
-#_form_1_ ._error,
-#_form_1_ ._error-inner,
-#_form_1_ ._form_error {
+#_form_3_ ._error,
+#_form_3_ ._error-inner,
+#_form_3_ ._form_error {
   display: none !important;
   visibility: hidden !important;
   height: 0 !important;
@@ -21,7 +21,7 @@ input:-webkit-autofill:active {
 
 
 
-#_form_1_ ._form-thank-you {
+#_form_3_ ._form-thank-you {
   color: white !important;
   width: 107%;
   background-color: rgba(111, 111, 111, 0.294);
@@ -32,21 +32,24 @@ input:-webkit-autofill:active {
 
 
 @media (max-width: 600px) {
-  #_form_1_ ._x72985215 ._row {
+  #_form_3_ ._x72985215 ._row {
     display: flex !important;
   }
 
-  #_form_1_ ._x72985215 ._checkbox-radio {
+  #_form_3_ ._x72985215 ._checkbox-radio {
     margin-top: 10px;
   }
 
-  #_form_1_ ._x72985215 label {
+  #_form_3_ ._x72985215 label {
     display: flex !important;
     vertical-align: middle;
     margin-left: 4px;
   }
 
-  #_form_1_ ._x72985215 input[type="checkbox"] {
+  #_form_3_ ._x72985215 input[type="checkbox"] {
     margin-bottom: 8px;
   }
 }
+
+
+
