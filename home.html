@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./resources/images/favicon/favicon.ico" type="image/x-icon" />
+  <title>Masterclass</title>
+  <style>
+    body{
+      padding: 0;
+      margin: 0;
+      background-color: rgba(0, 0, 0, 0.902);
+      color: white;
+      font-family: 'SF Font', sans-serif;
+      opacity: 0;
+      animation: fadeIn 1.4s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+
+
+
+    /* HEADER */
+    header{
+      height: fit-content;
+      padding: 4%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .image-background{
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden; /* Important for clipping */
+      z-index: -1;
+    }
+    .image-background img{
+      width: 100%;
+
+      object-fit: cover; /* Keeps image scaled correctly */
+  
+      /* Fade effect */
+      -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+      mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+      -webkit-mask-size: 100% 100%;
+      mask-size: 100% 100%;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;      
+    }
+
+
+    /* VIDEO BOX */
+    .video-container{
+      background-color: aliceblue;
+      width: 97%;
+      height: 300px;
+    }
+
+    /* HEADER BUTTON CTA */
+    .cta{
+      width: 97%;
+      height: 60px;
+      margin-top: 30px;
+      text-decoration: none;
+      color: white;
+      background-color: #02AFFF;
+      border-radius: 4px;
+
+      text-align: center;
+      line-height: 60px;
+      font-size: 1.3rem;
+    }
+
+    /* ////////////////////////////////// */
+    /* SECTION 2 */
+    .section2{
+      margin-top: 55px;
+      height: fit-content;
+      padding: 4% 5%;
+    }
+
+    .section2 h3{
+      font-size: 1.30rem;
+      text-align: center;
+    }
+
+    .three-text-container{
+      border-left: 6px solid rgb(127, 127, 127);
+      padding-left: 37px;
+      padding-right: 10px;
+      margin-left: 15px;
+      font-size: 0.9rem;
+
+      display: flex;
+      flex-direction: column;
+      gap: 27px;
+    }
+
+
+    /* MOBILE SCREENS */
+    @media (max-width: 768px) {
+      header{
+        padding: 14% 6% 0 6%;
+      }
+      .header-title{
+        font-size: 1.1rem;
+      }
+      h1{
+        font-size: 1.60rem;
+        margin-top: 34px;
+      }
+      .hide-on-mobile{
+        display: none;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="image-background">
+    <img src="./resources/images/image-background.png" alt="Imagen de fondo">
+  </div>
+
+  <header>
+    <div class="header-title">MASTERCLASS GRATUITA EN DIRECTO <br> <span style="font-weight: 600;">29 DE MAYO 19:00H</span></div>
+    <h1>Descubre el sistema con el que conseguimos pasar <br class="hide-on-mobile"> de <span style="color: #02AFFF;">2 a +100 clientes</span> en asesorías y vivir 100% del fitness online</h1>
+
+    <div class="video-container"></div>
+
+    <a class="cta" href="https://chat.whatsapp.com/LulDKKOH1KwLJk72nAzVx0">Reserva ya tu plaza</a>
+  </header>
+
+  <!-- SECTION 2 -->
+  <section class="section2">
+
+      <h3>¿Que vas a aprender en este evento?</h2>
+
+      <div class="three-text-container">
+        <p>🔓 Cómo vivir de tus asesorías online en 2025.<br>
+          El sistema que te permitirá dejar de vender entrenos sueltos y empezar a vivir 100% del fitness online.</p>
+       
+        <p>📲 Cómo monetizar tus redes sociales sin bailar en TikTok ni subir cada día contenido nuevo.<br>
+          Sí, es posible tener un sistema que atrae clientes sin depender de tu físico o de algoritmos.</p>
+        
+        <p>💼 Cómo pasamos de 2 clientes a más de 100 con asesorías online y te mostraremos el paso a paso que puedes aplicar tú también, incluso si ahora no sabes por dónde empezar.</p>
+      </div>
+
+  </section>
+</body>
+</html>
