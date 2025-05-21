@@ -17,7 +17,7 @@ window._show_thank_you = function(id, message, trackcmp_url, email) {
 
     // Redirect to next page to confirm registration
     setTimeout(function() {
-      window.location.href = "./confirmar.html";
+      window.location.href = "./confirmar";
     }, 100); // optional delay
 };
 window._show_unsubscribe = function(id, message, trackcmp_url, email) {
