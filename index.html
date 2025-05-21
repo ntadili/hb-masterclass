@@ -55,7 +55,7 @@
 
 
     /* VIDEO BOX */
-    .video-wrapper {
+    /* .video-wrapper {
       width: 97%;
       max-width: 900px;
       margin: 20px auto;
@@ -66,8 +66,30 @@
       height: auto;
       border-radius: 4px;
       background-color: #000;
+    } */
+
+    .video-wrapper-container {
+      width: 97%;
+      max-width: 900px;
+      margin: 20px auto;
     }
 
+    .vimeo-responsive {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 ratio */
+      height: 0;
+      overflow: hidden;
+      border-radius: 4px;
+    }
+
+    .vimeo-responsive iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
 
     /* HEADER BUTTON CTA */
     .cta{
@@ -197,12 +219,20 @@
     <div class="header-title">MASTERCLASS GRATUITA EN DIRECTO <br> <span style="font-weight: 600;">29 DE MAYO 19:00H</span></div>
     <h1>Descubre el sistema con el que conseguimos pasar <br class="hide-on-mobile"> de <span style="color: #02AFFF;">2 a +100 clientes</span> en asesorías y vivir 100% del fitness online</h1>
 
-    <div class="video-wrapper">
-      <video controls autoplay muted playsinline>
-        <source src="./resources/images/presentation.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+    <div class="video-wrapper-container">
+      <div class="vimeo-responsive">
+        <iframe src="https://player.vimeo.com/video/1086358088?title=0&byline=0&portrait=0&dnt=1&badge=0&autopause=0"
+        frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowfullscreen
+        style="position:absolute;top:0;left:0;width:100%;height:100%;"
+        title="presentation">
+      </iframe>      
+      </div>
     </div>
+    
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    
     
 
     <a class="cta" href="./registro.html">Reserva ya tu plaza</a>
