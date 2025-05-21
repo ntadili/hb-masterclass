@@ -1,0 +1,52 @@
+/* ———————————————— MOBILE ADAPTATION ———————————————— */
+@media (max-width: 768px) {
+  header{
+    padding: 14% 6% 0 6%;
+  }
+  .header-title{
+    font-size: 1.1rem;
+  }
+  h1{
+    text-align: left;
+    font-size: 1.55rem;
+    margin-top: 34px;
+    margin-left: 2px !important;
+  }
+  .hide-on-mobile{
+    display: none;
+  }
+
+  .custom-list{
+    font-size: 0.8rem;
+  }
+  .custom-list li{
+    margin-top: 11px;
+  }
+
+  .list-parent-container div{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+  }
+
+  #_form_3_ input[type="text"],
+  #_form_3_ ._form_element {
+    margin-bottom: 12px !important; /* or even 8px */
+  }
+
+  #_form_3_ ._form_element._x72985215 {
+    margin-top: -10px !important;
+    margin-bottom: 5px !important;
+  }
+
+  #_form_3_ ._submit {
+    margin-top: 10px !important;
+  }
+
+  /* Increase form container */
+  #_form_3_, #_form_3_ ._form-content {
+    max-width: 120% !important;
+    width: 105% !important;
+    right: 17px !important;
+  }
+}
