@@ -16,3 +16,9 @@ footer div{
   align-items: center;
   gap: 17px;
 }
+
+@media (max-width: 768px) {
+  footer{
+    font-size: 0.8rem;
+  }
+}
