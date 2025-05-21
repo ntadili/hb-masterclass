@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="./resources/images/favicon/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="./resources/styles/footer.css">
   <title>Confirma tu plaza</title>
   <style>
     body{
@@ -44,7 +45,7 @@
       margin-top: 15%;
     }
 
-    a{
+    .cta{
       width: 87%;
       height: 60px;
       text-decoration: none;
@@ -120,40 +121,22 @@
   <header>
     <div class="header-title">MASTERCLASS GRATUITA EN DIRECTO <br> <span style="font-weight: 600;">29 DE MAYO 19:00H</span></div>
     <h1>Te queda un último paso!</h1>
-    <a href="https://chat.whatsapp.com/LulDKKOH1KwLJk72nAzVx0">Confirma tu reserva</a>
+    <a class="cta" href="https://chat.whatsapp.com/LulDKKOH1KwLJk72nAzVx0">Confirma tu reserva</a>
 
     <div class="contador-container"><p id="contador"></p></div>
   </header>
 
-<script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("May 29, 2025 03:00:00").getTime();
+  <!-- FOOTER -->
+  <footer>
+    <p>H Barrio Atheltes, S.L | Copyright © <br>Todos los Derechos Reservados 2025</p>
+    <div>
+      <a style="text-decoration: none; color: rgb(79, 79, 79);" href="">Política de Privacidad</a>
+      <p>Aviso Legal</p>
+      <p>Política de Cookies</p>
+    </div>
+  </footer>
 
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-
-      // Get today's date and time
-      var now = new Date().getTime();
-        
-      // Find the distance between now and the count down date
-      var distance = countDownDate - now;
-        
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
-      // Output the result in an element with id="demo"
-      document.getElementById("contador").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
-        
-      // If the count down is over, write some text 
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("contador").innerHTML = "EXPIRED";
-      }
-    }, 1000);
-  </script>
 </body>
+<script src="./contador.js"></script>
+
 </html>
