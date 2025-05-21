@@ -164,15 +164,69 @@
     }
 
 
-    /* ////////////////////////////////// */
+     /* ////////////////////////////////// */
     /* SECTION 4 */
     .section4{
-      margin-top: 55px;
+      margin-top: 0px;
       height: fit-content;
       padding: 4% 8%;
       display: flex;
       flex-direction: column;
       text-align: center;
+    }
+
+    .testimonial-section {
+      text-align: center;
+      padding: 60px 20px;
+      color: white;
+    }
+
+    .carousel {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .video-frame-wrapper {
+      width: 100%;
+      max-width: 400px;
+      position: relative;
+      border: 2px solid white;
+      padding: 10px;
+      box-sizing: border-box;
+
+    }
+
+    .video {
+      width: 100%;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: linear-gradient(to bottom, #004C94, #2170B8);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      z-index: 10;
+      padding-bottom: 2.5px;
+    }
+    
+    .nav.left {
+      left: -20px;
+    }
+
+    .nav.right {
+      right: -20px;
     }
 
     /* ////////////////////////////////// */
@@ -293,12 +347,34 @@
 
 
    <!-- SECTION 4 -->
-    <section class="section4">
-      <h3>Testimonios</h3>
-      <div class="testimonios-container">
+   <section class="section4 testimonial-section">
+    <h2>Testimonios</h2>
+    <div class="carousel">    
 
+      <div class="video-frame-wrapper">
+        <button class="nav left" onclick="prevVideo()"><p>←</p></button>
+
+        <div class="video" id="video-0">
+          <div style="padding:177.78% 0 0 0;position:relative;">
+            <iframe id="iframe-0" src="https://player.vimeo.com/video/1086491804?h=fe74348135&badge=0&autopause=0&player_id=player0&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="INIGO"></iframe>
+          </div>
+        </div>
+        <div class="video" id="video-1" style="display:none">
+          <div style="padding:177.78% 0 0 0;position:relative;">
+            <iframe id="iframe-1" src="https://player.vimeo.com/video/1086490130?h=4867872d0c&badge=0&autopause=0&player_id=player1&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="ADRI"></iframe>
+          </div>
+        </div>
+        <div class="video" id="video-2" style="display:none">
+          <div style="padding:177.78% 0 0 0;position:relative;">
+            <iframe id="iframe-2" src="https://player.vimeo.com/video/1086491074?h=d5306589ca&badge=0&autopause=0&player_id=player2&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="MARCOS"></iframe>
+          </div>
+        </div>
+      
+        <button class="nav right" onclick="nextVideo()"><p>→</p></button>
       </div>
-    </section>
+  
+    </div>
+  </section>
 
    <!-- SECTIONN 5 -->   
     <section class="section5">
@@ -320,5 +396,7 @@
 
 </body>
 <script src="./contador.js"></script>
+<script src="./testimonios.js"></script>
+<script src="https://player.vimeo.com/api/player.js"></script>
 
 </html>
