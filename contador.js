@@ -1,5 +1,6 @@
       // Set the date we're counting down to
-      var countDownDate = new Date("May 29, 2025 19:00:00").getTime();
+      var countDownDate = new Date(Date.UTC(2025, 4, 29, 17, 0, 0)).getTime();
+
   
       // Update the count down every 1 second
       var x = setInterval(function() {
@@ -32,7 +33,7 @@
       // CONTANDOR HEADER
 
       // Set the date we're counting down to
-      var countDownDate = new Date("May 29, 2025 19:00:00").getTime();
+      var countDownDate = new Date(Date.UTC(2025, 4, 29, 17, 0, 0)).getTime();
   
       // Update the count down every 1 second
       var x = setInterval(function() {
