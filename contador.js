@@ -18,7 +18,7 @@
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
           
         // Output the result in an element with id="demo"
-        document.getElementById("contador").innerHTML = days + "d " + hours + "h "
+        document.getElementById("contador").innerHTML = hours + "h "
         + minutes + "m " + seconds + "s ";
           
         // If the count down is over, write some text 
@@ -51,7 +51,7 @@
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
           
         // Output the result in an element with id="demo"
-        document.getElementById("contador-header").innerHTML = days + "d " + hours + "h "
+        document.getElementById("contador-header").innerHTML = hours + "h "
         + minutes + "m " + seconds + "s ";
           
         // If the count down is over, write some text 
