@@ -64,6 +64,9 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .section2{
+    margin-top: 20px;
+  }
   .accordion-container {
     padding: 16px;
     width: 100%;
