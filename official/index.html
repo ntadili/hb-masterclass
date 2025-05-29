@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../resources/images/favicon/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="../resources/styles/footer.css">
+  <link rel="stylesheet" href="./desplegables.css">
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PW6DGD7B');</script>
+  <!-- End Google Tag Manager -->
+
+  <title>Masterclass</title>
+  <style>
+    body{
+      padding: 0;
+      margin: 0;
+      background-color: rgba(0, 0, 0, 0.902);
+      color: white;
+      font-family: 'SF Font', sans-serif;
+      opacity: 0;
+      animation: fadeIn 1.4s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+
+    /* HEADER */
+    header{
+      height: fit-content;
+      padding: 4%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .image-background{
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden; /* Important for clipping */
+      z-index: -1;
+    }
+    .image-background img{
+      width: 100%;
+
+      object-fit: cover; /* Keeps image scaled correctly */
+  
+      /* Fade effect */
+      -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+      mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+      -webkit-mask-size: 100% 100%;
+      mask-size: 100% 100%;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;      
+    }
+
+
+    /* VIDEO BOX */
+    /* .video-wrapper {
+      width: 97%;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+
+    .video-wrapper video {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      background-color: #000;
+    } */
+
+    .video-wrapper-container {
+      width: 97%;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+
+    .vimeo-responsive {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 ratio */
+      height: 0;
+      overflow: hidden;
+      border-radius: 4px;
+    }
+
+    .vimeo-responsive iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* HEADER BUTTON CTA */
+    .cta{
+      width: 97%;
+      height: 60px;
+      margin-top: 30px;
+      text-decoration: none;
+      color: white;
+      font-weight: 700;
+      background-color: #02AFFF;
+      border-radius: 4px;
+
+      text-align: center;
+      line-height: 60px;
+      font-size: 1.3rem;
+    }
+
+    /* ////////////////////////////////// */
+    /* SECTION 2 */
+    .section2{
+      margin-top: 0px;
+      height: fit-content;
+      padding: 4%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* ////////////////////////////////// */
+    /* SECTION 3 */
+    .section3{
+      margin-top: 55px;
+      height: fit-content;
+      padding: 4% 8%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .about-us-image-container{
+      width: 100%;
+    }
+
+    .about-us-image-container img{
+      width: 100%;
+      border-radius: 4px;
+    }
+
+    .sobre-nosotros-texto p{
+      margin-top: 10px;
+      margin-left: 3px;
+    }
+
+    .section3 .cta{
+      margin-top: 10px;
+      margin-left: 3px;
+    }
+
+
+    /* ////////////////////////////////// */
+    /* SECTION 4 */
+    .section4{
+      margin-top: 0px;
+      height: fit-content;
+      padding: 4% 8%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .testimonial-section {
+      text-align: center;
+      padding: 60px 20px;
+      color: white;
+    }
+
+    .carousel {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .video-frame-wrapper {
+      width: 100%;
+      max-width: 330px;
+      position: relative;
+      border: 2px solid white;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .video {
+      width: 100%;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: linear-gradient(to bottom, #004C94, #2170B8);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      z-index: 10;
+      padding-bottom: 1px;
+    }
+
+    .nav.left {
+      left: -20px;
+    }
+
+    .nav.right {
+      right: -20px;
+    }
+    /* ////////////////////////////////// */
+    /* SECTION 5 */
+    .section5{
+      margin-top: 10px;
+      height: fit-content;
+      padding: 4% 8%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      font-weight: 600;
+      font-size: 0.97rem;
+    }
+
+    @media (min-width: 1024px) {
+      .section3{
+        margin-top: 55px;
+        height: fit-content;
+        padding: 4% 8%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .section3-child{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+
+        width: 56.4rem;
+      }
+      .about-us-image-container img{
+        width: 100%;
+      }
+
+      .section3 .cta{
+        margin-top: 30px;
+        width: 56.4rem ;
+      }
+
+      header .cta{
+        width: 56.4rem;
+      }
+
+
+    }
+
+    /* MOBILE SCREENS */
+    @media (max-width: 768px) {
+      header{
+        padding: 14% 6% 0 6%;
+      }
+      .header-title{
+        font-size: 1.1rem;
+      }
+      h1{
+        font-size: 1.50rem;
+        margin-top: 34px;
+      }
+      .hide-on-mobile{
+        display: none;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="image-background">
+    <img src="../resources/images/image-background.png" alt="Imagen de fondo">
+  </div>
+
+  <header>
+    <div class="header-title">MASTERCLASS GRATUITA EN DIRECTO <br> <span style="font-weight: 600;">JUEVES 29 DE MAYO 19:00H</span></div>
+    <h1>Descubre el sistema con el que conseguimos pasar <br class="hide-on-mobile"> de <span style="color: #02AFFF;">2 a +100 clientes</span> en asesorías y vivir 100% del fitness online</h1>
+
+    <div class="video-wrapper-container">
+      <div class="vimeo-responsive">
+        <iframe src="https://player.vimeo.com/video/1086358088?title=0&byline=0&portrait=0&dnt=1&badge=0&autopause=0"
+        frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowfullscreen
+        style="position:absolute;top:0;left:0;width:100%;height:100%;"
+        title="presentation">
+      </iframe>      
+      </div>
+    </div>
+    
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    
+    
+
+    <a class="cta" href="./registro.html">Reserva ya tu plaza</a>
+    
+  </header>
+
+
+  <!-- SECTION 2 -->
+  <section class="section2">
+
+    <h2>Aquí te contamos todo lo que hay dentro de Élite Fit Academy:</h2>
+
+    <div class="accordion-container">
+
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          📖 11 módulos de formación
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>11 módulos de formación con +13 horas de contenido por Alex y Gonzalo (1500€): 33 clases en vídeo en las que te guiamos a lo largo de los pasos exactos accionables para crecer tus asesorías de forma sostenible y a largo plazo.</p>
+          <ul>
+            <li>Gestión de clientes</li>
+            <li>Captación de clientes</li>
+            <li>Ventas</li>
+            <li>Marca personal</li>
+            <li>Redes sociales</li>
+            <li>Comunicación</li>
+            <li>Entrenamiento</li>
+            <li>Nutrición</li>
+            <li>Finanzas y fiscalidad</li>
+            <li>De 0 a 1.000€/mes</li>
+            <li>De 1.000 a 3.000€/mes</li>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          📄 25 Plantillas descargables, hojas de cálculo y checklists
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>Las mismas herramientas que usamos para crecer de forma sostenible. (700€)</p>
+          <ul>
+            <li>Excel de gestión de clientes</li>
+            <li>Dashboard de métricas</li>
+            <li>10 plantillas de entrenamiento y alimentación</li>
+            <li>Guión de apertura de conversaciones</li>
+            <li>Guión de venta por texto y videollamada</li>
+            <li>Hoja de ruta para llamadas efectivas</li>
+            <li>20 estructuras de contenido viral</li>
+            <li>100 hooks virales</li>
+            <li>Plantilla para Manychat</li>
+            <li>Manual de objeciones</li>
+            <li>Plantillas de stories</li>
+            <li>Organización de contenido</li>
+            <li>CTAs para stories y reels</li>
+            <li>10 secuencias de venta para stories</li>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          🔴 Directo semanal con Alex y Gonza
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>(600€) Resolución de dudas en vivo, repaso de módulos y ajuste del camino según tu situación.</p>
+        </div>
+      </div>
+    
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          🔴 Sesión mensual con experto
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>(300€) Aprende de referentes del fitness, emprendimiento o marketing cada mes.</p>
+        </div>
+      </div>
+    
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          📲 Chat de networking
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>(200€) Comparte, colabora y crece con otros entrenadores como tú.</p>
+        </div>
+      </div>
+    
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          🧠 Acceso a Alex y Gonza como mentores
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>(600€) Soporte continuo durante la semana para que avances con claridad.</p>
+        </div>
+      </div>
+    
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          🖥️ 3 Workshops Temáticos
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <ul>
+            <li>Ventas</li>
+            <li>Producto</li>
+            <li>Marketing y RRSS</li>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          🫂 Equipo de seguimiento
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>(300€) Account manager desde el primer día + soporte diario.</p>
+        </div>
+      </div>
+    
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          🏠 Evento formal presencial
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>(300€) Encuentro para compartir avances, resolver dudas clave y crear conexiones reales.</p>
+        </div>
+      </div>
+    
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          🥂 Evento informal presencial
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>(200€) Relaciónate y comparte en un ambiente más relajado.</p>
+        </div>
+      </div>
+    
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          🎓 Graduación
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>(100€) Ceremonia simbólica del cierre de etapa y comienzo de tu nueva identidad como entrenador.</p>
+        </div>
+      </div>
+    
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          📄 Certificado final de curso
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>(100€) Certificado firmado por los mentores del programa.</p>
+        </div>
+      </div>
+    
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          🎦 Acceso total y garantía
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>3 meses de formación intensiva + 6 meses de acceso total. Garantía de 15 días.</p>
+        </div>
+      </div>
+    
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          🫵🏼 BONUS: Onboarding individual
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>(100€) Bienvenida privada 1a1 para arrancar con foco.</p>
+        </div>
+      </div>
+    
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          🚀 BONUS: Casos de estudio
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>(300€) Casos reales de alumnos que llegaron a 2.000€–7.000€/mes.</p>
+        </div>
+      </div>
+    
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          🇬🇧 BONUS: Masterclass con AJ Morris
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>(800€) Culturismo natural y comunicación efectiva con clientes.</p>
+        </div>
+      </div>
+    
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          🇷🇺 BONUS: Masterclass con David Turu
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>(800€) Estrategia para llenar tus asesorías usando stories.</p>
+        </div>
+      </div>
+    
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          🎙️ BONUS: Masterclass con Pablo Matesanz
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>(800€) Comunicación clara y autoridad en cámara.</p>
+        </div>
+      </div>
+    
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          🔮 BONUS: Guía para convertir seguidores en clientes
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>(100€) Estrategias prácticas para cerrar ventas en menos de 48h.</p>
+        </div>
+      </div>
+    
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          🔋 BONUS: Rutina diaria para facturar 10.000€/mes
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>(100€) Guía paso a paso con hábitos y sistema de productividad.</p>
+        </div>
+      </div>
+    
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          🫵🏼 BONUS AR1: Sesión estratégica 1a1 con Alex y Gonza
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>(300€) Auditoría a fondo personalizada. Solo para los 20 primeros.</p>
+        </div>
+      </div>
+    
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          🗓️ BONUS AR2: Calendario de Contenidos IG (30 días)
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>(100€) Plantilla editable con publicaciones para un mes.</p>
+        </div>
+      </div>
+    
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          💬 BONUS AR3: Secuencias de venta para Stories
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>(300€) Frases reales adaptadas que convierten sin sonar a venta.</p>
+        </div>
+      </div>
+    
+      <div class="accordion-item">
+        <button class="accordion-btn">
+          🚨 BONUS Sorpresa 24h: Powerexplosive
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>(900€) Mentalidad emprendedora con David Marchante.</p>
+        </div>
+      </div>
+    
+    </div>
+
+    <p style="text-align: center; font-weight: bold; font-size: 1.2rem;" >VALOR TOTAL: 4.900€ <br><br>
+
+      PRECIO OFICIAL: 1.000€ <br><br>
+      
+      OFERTA LANZAMIENTO: 697€ 
+    </p>
+
+  </section>
+
+  
+  <!-- SECTION 3 -->
+   <section class="section3">
+    <div class="section3-child">
+
+      <div class="about-us-image-container"><img src="../resources/images/Alex-y-Gonza.png" alt="Imagen de Gonza y Alex"></div>
+
+      <div class="sobre-nosotros-texto">
+        <p style="font-size: 0.9rem; font-weight: 200; margin-top: 17px; margin-bottom: 7px;">Quiénes somos</p>
+        <p style="font-size: 1.4rem; font-weight: 600; margin-bottom: 7px;">Gonza y Alex</p>
+        <p style="font-size: 0.95; font-weight: 200;">
+          Fundadores de HB y La Nueva Élite
+          Llevamos desde 2018 en el mundo del fitness online.<br>
+          <br>
+          Con nuestras asesorías, hemos acompañado a más de 2.000 personas a conseguir el físico de sus sueños. Enseñamos a que otros entrenadores lancen sus asesorías y se conviertan en entrenadores online de élite.<br>
+          <br>
+          Y ahora, en esta clase, queremos enseñarte a ti cómo empezar el camino hacia ese mismo lugar.
+        </p>
+
+      </div>      
+    </div>
+
+    <a class="cta" href="./registro.html">Reserva ya tu plaza</a>
+   </section>
+
+
+   <!-- SECTION 4 -->
+    <section class="section4 testimonial-section">
+      <h3>Lo que dicen las personas que ya han probado el sistema</h3>
+      <div class="carousel">    
+
+        <div class="video-frame-wrapper">
+          <button class="nav left" onclick="prevVideo()"><p>←</p></button>
+
+          <div class="video" id="video-0">
+            <div style="padding:177.78% 0 0 0;position:relative;">
+              <iframe id="iframe-0" src="https://player.vimeo.com/video/1086491804?h=fe74348135&badge=0&autopause=0&player_id=player0&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="INIGO"></iframe>
+            </div>
+          </div>
+          <div class="video" id="video-1" style="display:none">
+            <div style="padding:177.78% 0 0 0;position:relative;">
+              <iframe id="iframe-1" src="https://player.vimeo.com/video/1086490130?h=4867872d0c&badge=0&autopause=0&player_id=player1&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="ADRI"></iframe>
+            </div>
+          </div>
+          <div class="video" id="video-2" style="display:none">
+            <div style="padding:177.78% 0 0 0;position:relative;">
+              <iframe id="iframe-2" src="https://player.vimeo.com/video/1086491074?h=d5306589ca&badge=0&autopause=0&player_id=player2&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="MARCOS"></iframe>
+            </div>
+          </div>
+        
+          <button class="nav right" onclick="nextVideo()"><p>→</p></button>
+        </div>
+    
+      </div>
+    </section>
+
+   <!-- SECTIONN 5 -->   
+    <section class="section5">
+      <p>Acceso exclusivo al sistema con el que pasamos de 2 a más de 100 clientes con el que decenas de entrenadores han dejado de depender de su trabajo por cuenta ajena y vivir 100% de sus asesorías online</p>
+      <div style="width: 100%; border: 1px solid rgb(53, 53, 53);"></div>
+      <p style="color: #02AFFF;">Los principios que compartimos en esta formación no los enseñamos en ningún otro canal. Y lo que aprendas aquí puede ser el punto de inflexión que te faltaba para despegar de verdad.</p>
+      <div class="contador-container"><p id="contador"></p></div>
+    </section>
+
+    <!-- FOOTER -->
+     <footer>
+      <p>H Barrio Atheltes, S.L | Copyright © <br>Todos los Derechos Reservados 2025</p>
+      <div>
+        <a style="text-decoration: none; color: rgb(79, 79, 79);" href="http://hbarrio.com/index.php/politica-de-privacidad/">Política de Privacidad</a>
+        <p>Aviso Legal</p>
+        <p>Política de Cookies</p>
+      </div>
+     </footer>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PW6DGD7B"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+   
+</body>
+<script src="../testimonios.js"></script>
+<script src="https://player.vimeo.com/api/player.js"></script>
+
+<script>
+  const items = document.querySelectorAll('.accordion-item');
+
+  items.forEach(item => {
+    const btn = item.querySelector('.accordion-btn');
+    btn.addEventListener('click', () => {
+      const isActive = item.classList.contains('active');
+
+      // Close all
+      items.forEach(i => i.classList.remove('active'));
+
+      // If not previously active, open it
+      if (!isActive) item.classList.add('active');
+    });
+  });
+</script>
+
+
+</html>

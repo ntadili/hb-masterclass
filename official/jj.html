@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+.accordion-container {
+  font-family: 'Helvetica Neue', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  background: #0e0e0e;
+}
+
+.accordion-item {
+  border: 1px solid #9a9a9a;
+  border-radius: 8px;
+  overflow: hidden;
+  background: linear-gradient(to right, #111, #0f0f0f);
+}
+
+.accordion-btn {
+  width: 100%;
+  background: none;
+  color: white;
+  font-size: 1rem;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.accordion-btn .icon {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  background: #0f0f0f;
+  color: white;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0 16px;
+}
+
+.accordion-content p {
+  font-size: 0.95rem;
+  font-weight: 300;
+  margin: 12px 0;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 500px;
+  padding: 12px 16px 16px;
+}
+
+.accordion-item.active .icon {
+  transform: rotate(45deg);
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .accordion-btn {
+    font-size: 1.1rem;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="accordion-container">
+    <div class="accordion-item">
+      <button class="accordion-btn">
+        📖 11 módulos de formación
+        <span class="icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <p>
+          11 módulos de formación con +13 horas de contenido por Alex y Gonzalo (1500€): 33 clases en vídeo en las que te guiamos a lo largo de los pasos exactos accionables para crecer tus asesorías de forma sostenible y a largo plazo.
+        </p>
+      </div>
+    </div>
+  
+    <div class="accordion-item">
+      <button class="accordion-btn">
+        📄 25 Plantillas descargables, hojas de cálculo y checklists
+        <span class="icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <p>
+          Plantillas prácticas para aplicar lo aprendido sin perder tiempo creando desde cero.
+        </p>
+      </div>
+    </div>
+  
+    <div class="accordion-item">
+      <button class="accordion-btn">
+        🎥 Directo semanal con Alex y Gonza
+        <span class="icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <p>
+          Acceso semanal en vivo para dudas, apoyo y conexión con la comunidad.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  
+</body>
+
+<script>
+  const items = document.querySelectorAll('.accordion-item');
+
+  items.forEach(item => {
+    const btn = item.querySelector('.accordion-btn');
+    btn.addEventListener('click', () => {
+      const isActive = item.classList.contains('active');
+
+      // Close all
+      items.forEach(i => i.classList.remove('active'));
+
+      // If not previously active, open it
+      if (!isActive) item.classList.add('active');
+    });
+  });
+</script>
+
+
+</html>
