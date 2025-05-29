@@ -65,11 +65,11 @@
 /* Responsive */
 @media (max-width: 768px) {
   .section2{
-    margin-top: 30px;
+    margin-top: 30px !important;
   }
 
   .section2 h3{
-    font-size: 1.1rem
+    font-size: 1.1rem !important;
   }
 
   .accordion-container {
