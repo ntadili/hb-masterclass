@@ -65,8 +65,13 @@
 /* Responsive */
 @media (max-width: 768px) {
   .section2{
-    margin-top: 20px;
+    margin-top: 30px;
   }
+
+  .section2 h3{
+    font-size: 1.1rem
+  }
+
   .accordion-container {
     padding: 16px;
     width: 100%;
