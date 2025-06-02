@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="../resources/images/favicon/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="../resources/styles/footer.css">
+  <link rel="icon" href="./resources/images/favicon/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="./resources/styles/footer.css">
   <link rel="stylesheet" href="./desplegables.css">
 
   <!-- Google Tag Manager -->
@@ -123,13 +123,19 @@
     .section1-2{
       margin-top: 20px;
       height: fit-content;
-      padding: 2% 3%;
+      padding: 2% 20%;
       text-align: center;
-      border: 1px solid #02AFFF;
-      width: fit-content;
       margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
+    .section1-2 div{
+      border: 1px solid #02AFFF;
+      padding: 2%;
+      width: 100%;
+    }
     .section1-2 h3{
       font-size: 1.5rem;
     }
@@ -148,6 +154,15 @@
 
     .section2 h3{
     font-size: 1.5rem
+    }
+
+    .es-para-ti{
+      padding: 20px;
+      background-color: #d9d9d907;
+      border-radius: 8px;
+      border: 2px dotted #9a9a9a;
+      margin-top: 40px;
+      margin-bottom: 20px;
     }
 
     /* ////////////////////////////////// */
@@ -256,6 +271,15 @@
       font-size: 0.97rem;
     }
 
+    .ahora-tu-decides{
+      padding: 20px;
+      background-color: #d9d9d907;
+      border-radius: 8px;
+      border: 2px dotted #9a9a9a;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+
     @media (min-width: 1024px) {
       .section3{
         margin-top: 55px;
@@ -299,7 +323,7 @@
     /* MOBILE SCREENS */
     @media (max-width: 768px) {
       header{
-        padding: 14% 6% 0 6%;
+        padding: 5% 6% 0 6%;
       }
       .header {
         padding: 0 60%;
@@ -319,14 +343,21 @@
         margin-top: 40px !important;
         margin-bottom: -10px;
         height: fit-content;
-        padding: 2% 3%;
+        padding: 2% 8.2%;
         text-align: center;
-        border: 0px solid #02AFFF;
-        width: 23.5rem;
         margin: 0 auto;
+        border: 0px solid #02AFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .section1-2 div{
+        border: 1px solid #02AFFF;
+        padding: 2%;
+        width: 100%;
       }
       .section1-2 h3{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
       }
     }
 
@@ -335,14 +366,12 @@
 
 <body>
   <div class="image-background">
-    <img src="../resources/images/image-background.png" alt="Imagen de fondo">
+    <img src="./resources/images/image-background.png" alt="Imagen de fondo">
   </div>
 
   <header>
-    <div class="header-title">MASTERCLASS GRATUITA EN DIRECTO <br> <span style="font-weight: 600;">JUEVES 29 DE MAYO 19:00H</span></div>
-
     <div class="title"><h1>Descubre cómo convertirte en un entrenador online de élite con el mismo sistema que hemos utilizado para pasar de <span style="color: #02AFFF;">2 a +100 clientes</span></h1></div>
-    <h2 style="font-size: 1rem; color: #00628f; margin-top: 0px;">Sin anuncios ni estrategias complejas.</h2>
+    <h2 style="font-size: 1rem; color: #f4ff7d; margin-top: 0px;">Sin anuncios ni estrategias complejas.</h2>
 
     <div class="video-wrapper-container">
       <div class="vimeo-responsive" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1089049538?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="DIRECTO"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
@@ -352,14 +381,17 @@
     
     
 
-    <a class="cta" href="./registro.html">Quiero entrar</a>
+    <a class="cta" href="https://calendly.com/hbathletes/entrevista-inicial-elite-fit">Quiero entrar</a>
     
   </header>
 
   <!-- SECTION 1-2 -->
    <section class="section1-2">
-    <h3>Desbloquea el sistema que te lleva de 0 a vivir de tus asesorías online</h3>
-    <p>Únete a Élite Fit Academy y recorre el mismo camino que han seguido otros entrenadores online <br> para generar entre 1.000€ y 3.000€/mes, con estructura, libertad y resultados.</p>
+    <div>
+      <h3>Desbloquea el sistema que te lleva de 0 a vivir de tus asesorías online</h3>
+      <p>Únete a Élite Fit Academy y recorre el mismo camino que han seguido otros entrenadores online para generar entre 1.000€ y 3.000€/mes, con estructura, libertad y resultados.</p>      
+    </div>
+
    </section>
 
   <!-- SECTION 2 -->
@@ -631,17 +663,23 @@
           <p>Frases reales adaptadas que convierten sin sonar a venta.</p>
         </div>
       </div>
-    
-      <div class="accordion-item">
-        <button class="accordion-btn">
-          🚨 BONUS Sorpresa 24h: Powerexplosive
-          <span class="icon">+</span>
-        </button>
-        <div class="accordion-content">
-          <p>Mentalidad emprendedora con David Marchante.</p>
-        </div>
-      </div>
-    
+
+      <a class="cta" href="https://calendly.com/hbathletes/entrevista-inicial-elite-fit" style="width: 100%;">Quiero entrar</a>
+
+    </div>
+
+
+    <div class="es-para-ti">
+      <p><span style="font-size: 1.2rem;"><span style="color: #02AFFF; font-weight: bold; font-size: 1.3rem;">Elite Fit Academy </span>es para ti si:</span> <br> <br> <br>
+
+        ✅ Eres entrenador online (o quieres serlo) y estás cansado de improvisar sin un sistema que te funcione. <br><br>
+        ✅ Tienes resultados con tus clientes, pero no consigues llenar tu agenda. <br><br>
+        ✅ Sientes que te falta estructura para atraer, vender y retener de forma profesional. <br><br>
+        ✅ Ya estás vendiendo, pero quieres escalar sin perder la cabeza (ni la calidad). <br><br>
+        ✅ Estás harto de los consejos vacíos tipo “haz más reels” y quieres un método probado que funcione con o sin viralidad. <br><br>
+        ✅ Quieres que tu marca personal no solo inspire… sino que convierta. <br><br>
+        ✅ Estás dispuesto a hacer lo que haga falta para vivir bien de las asesorías. <br><br>
+        ✅ Buscas acompañamiento real, con personas que ya han recorrido el camino y te puedan guiar con claridad.</p>
     </div>
 
     <p style="text-align: center; font-weight: bold; font-size: 1.2rem;" >
@@ -650,6 +688,8 @@
       <span style="color: #02AFFF;">OFERTA LANZAMIENTO PRIMERA EDICIÓN: 697€ </span>
     </p>
 
+    <a class="cta" href="https://calendly.com/hbathletes/entrevista-inicial-elite-fit" style="max-width: 56.4rem;">Quiero entrar</a>
+
   </section>
 
   
@@ -657,7 +697,7 @@
    <section class="section3">
     <div class="section3-child">
 
-      <div class="about-us-image-container"><img src="../resources/images/Alex-y-Gonza.png" alt="Imagen de Gonza y Alex"></div>
+      <div class="about-us-image-container"><img src="./resources/images/Alex-y-Gonza.png" alt="Imagen de Gonza y Alex"></div>
 
       <div class="sobre-nosotros-texto">
         <p style="font-size: 0.9rem; font-weight: 200; margin-top: 17px; margin-bottom: 7px;">Quiénes somos</p>
@@ -674,7 +714,7 @@
       </div>      
     </div>
 
-    <a class="cta" href="./registro.html">Quiero entrar</a>
+    <a class="cta" href="https://calendly.com/hbathletes/entrevista-inicial-elite-fit">Quiero entrar</a>
    </section>
 
 
@@ -714,6 +754,8 @@
       <div style="width: 100%; border: 1px solid rgb(53, 53, 53);"></div>
       <p style="color: #02AFFF;">Los principios que compartimos en esta formación no los enseñamos en ningún otro canal. Y lo que aprendas aquí puede ser el punto de inflexión que te faltaba para despegar de verdad.</p>
       <div class="contador-container"><p id="contador"></p></div>
+
+      <a class="cta" href="https://calendly.com/hbathletes/entrevista-inicial-elite-fit" style="width: 100%;">Quiero entrar</a>
     </section>
 
     <!-- FOOTER -->
@@ -732,7 +774,7 @@
   <!-- End Google Tag Manager (noscript) -->
    
 </body>
-<script src="../testimonios.js"></script>
+<script src="./testimonios.js"></script>
 <script src="https://player.vimeo.com/api/player.js"></script>
 
 <script>
