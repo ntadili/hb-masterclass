@@ -33,7 +33,9 @@
       }
     }
 
-
+    .display-none{
+      display: none;
+    }
     /* HEADER */
     header{
       height: fit-content;
@@ -83,6 +85,7 @@
       width: 97%;
       max-width: 900px;
       margin: 20px auto;
+      margin-bottom: 0px;
     }
 
     .vimeo-responsive {
@@ -343,7 +346,7 @@
         margin-top: 40px !important;
         margin-bottom: -10px;
         height: fit-content;
-        padding: 2% 8.2%;
+        padding: 2% 0%;
         text-align: center;
         margin: 0 auto;
         border: 0px solid #02AFFF;
@@ -352,12 +355,18 @@
         align-items: center;
       }
       .section1-2 div{
-        border: 1px solid #02AFFF;
+        border: 0px solid #02AFFF;
         padding: 2%;
-        width: 100%;
+        width: 90%;
+        /* box-shadow: 1px 1px 10px; */
+
       }
       .section1-2 h3{
         font-size: 1.1rem;
+      }
+
+      .display-none{
+        display:contents;
       }
       .contador-container{
         margin-top: 40px;
@@ -371,7 +380,7 @@
 
       .logo-div{
         margin-top: -10px;
-        margin-bottom: -5px !important;
+        margin-bottom: 13px !important;
       }
 
       .logo-div div img{
@@ -380,6 +389,7 @@
 
       .announce{
         font-size: 0.9rem;
+        margin-top: 1px !important;
       }
     }
 
@@ -388,24 +398,29 @@
       height: 20px;
 
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 7px;
+      flex-direction: column;
+      gap: -10px !important;
 
-      margin-bottom: 30px;
+      margin-top: 3px;
+      margin-bottom: 40px;
     }
-
     .logo-div div img{
       width: 90px;
+    }
+    .logo2{
+      margin-top: -12px;
     }
 
     .announce{
       text-align: center;
       background-color: hsl(55, 94%, 58%);
       color: black;
-      padding-top: 3px;
-
-      margin-top: -15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      margin-top: 7px;
+      height: 25px;
     }
   </style>
 </head>
@@ -415,27 +430,21 @@
     <img src="./resources/images/image-background.png" alt="Imagen de fondo">
   </div>
   
-  <div class="announce"><p>🚨 LAS PLAZAS DE LA ACADEMIA YA ESTÁN ABIERTAS! RESERVA YA TU ENTREVISTA</p></div>
+  <div class="announce"><p>¡¡PLAZAS DE EF ACADEMY YA ABIERTAS!!</p></div>
   
   <header>
 
     <div class="logo-div">
       <div><img src="./resources/images/elite fit.png" alt="logo"></div>
-      <div><img src="./resources/images/academy.png" alt="logo2"></div>
+      <div class="logo2"><img src="./resources/images/academy.png" alt="logo2"></div>
     </div>
 
-    <div class="title"><h1>Descubre cómo convertirte en un entrenador online de élite con el mismo sistema que hemos utilizado para pasar de <span style="color: #02AFFF;">2 a +100 clientes</span></h1></div>
+    <div class="title"><h1>Desbloquea el sistema que te lleva <span style="color: #02AFFF;">de 0 a vivir (bien)</span> de tus asesorías online</h1></div>
     <h2 style="font-size: 1rem; color: #ffea2d; margin-top: 0px;">Sin anuncios ni estrategias complejas.</h2>
 
     <div class="video-wrapper-container">
       <div class="vimeo-responsive">
-        <iframe src="https://player.vimeo.com/video/1086358088?title=0&byline=0&portrait=0&dnt=1&badge=0&autopause=0"
-        frameborder="0"
-        allow="autoplay; fullscreen; picture-in-picture"
-        allowfullscreen
-        style="position:absolute;top:0;left:0;width:100%;height:100%;"
-        title="presentation">
-      </iframe>      
+        <iframe src="https://player.vimeo.com/video/1090561083?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="VSL IMG 8181"></iframe>
       </div>
     </div>
     
@@ -443,7 +452,7 @@
     
     
 
-    <a class="cta" href="https://calendly.com/hbathletes/entrevista-inicial-elite-fit">Quiero entrar</a>
+    <a class="cta" href="https://calendly.com/hbathletes/entrevista-inicial-elite-fit">Reservar entrevista inicial</a>
     
   </header>
 
@@ -451,8 +460,7 @@
    <section class="section1-2">
 
     <div>
-      <h3>Desbloquea el sistema que te lleva de 0 a vivir de tus asesorías online</h3>
-      <p>Únete a Élite Fit Academy y recorre el mismo camino que han seguido otros entrenadores online para generar entre 1.000€ y 3.000€/mes, con estructura, libertad y resultados.</p>      
+      <p>Únete a Élite Fit Academy y recorre el mismo camino que han seguido otros entrenadores online para generar entre 1.000€ y 3.000€/mes, <span class="display-none"><br></span> con estructura, libertad y resultados.</p>      
     </div>
 
    </section>
@@ -460,7 +468,7 @@
   <!-- SECTION 2 -->
   <section class="section2">
 
-    <h3 style="text-align: center;">Aquí te contamos todo lo que <br> hay dentro de Élite Fit Academy:</h3>
+    <h3 style="text-align: center;">¿Qué incluye Élite Fit Academy?</h3>
 
     <div class="accordion-container">
 
@@ -629,7 +637,7 @@
     
       <div class="accordion-item">
         <button class="accordion-btn">
-          🫵🏼 BONUS: Onboarding individual
+          🫵🏼 BONUS 1: Onboarding individual
           <span class="icon">+</span>
         </button>
         <div class="accordion-content">
@@ -639,7 +647,7 @@
     
       <div class="accordion-item">
         <button class="accordion-btn">
-          🚀 BONUS: Casos de estudio
+          🚀 BONUS 2: Casos de estudio
           <span class="icon">+</span>
         </button>
         <div class="accordion-content">
@@ -649,7 +657,7 @@
     
       <div class="accordion-item">
         <button class="accordion-btn">
-          🇬🇧 BONUS: Masterclass con AJ Morris
+          🇬🇧 BONUS 3: Masterclass con AJ Morris
           <span class="icon">+</span>
         </button>
         <div class="accordion-content">
@@ -659,7 +667,7 @@
     
       <div class="accordion-item">
         <button class="accordion-btn">
-          🇷🇺 BONUS: Masterclass con David Turu
+          🇷🇺 BONUS 4: Masterclass con David Turu
           <span class="icon">+</span>
         </button>
         <div class="accordion-content">
@@ -669,7 +677,7 @@
     
       <div class="accordion-item">
         <button class="accordion-btn">
-          🎙️ BONUS: Masterclass con Pablo Matesanz
+          🎙️ BONUS 5: Masterclass con Pablo Matesanz
           <span class="icon">+</span>
         </button>
         <div class="accordion-content">
@@ -679,7 +687,7 @@
     
       <div class="accordion-item">
         <button class="accordion-btn">
-          🔮 BONUS: Guía para convertir seguidores en clientes
+          🔮 BONUS 6: Guía para convertir seguidores en clientes
           <span class="icon">+</span>
         </button>
         <div class="accordion-content">
@@ -689,7 +697,7 @@
     
       <div class="accordion-item">
         <button class="accordion-btn">
-          🔋 BONUS: Rutina diaria para facturar 10.000€/mes
+          🔋 BONUS 7: Rutina diaria para facturar 10.000€/mes
           <span class="icon">+</span>
         </button>
         <div class="accordion-content">
@@ -699,7 +707,7 @@
     
       <div class="accordion-item">
         <button class="accordion-btn">
-          🫵🏼 BONUS AR1: Sesión estratégica 1a1 con Alex y Gonza
+          🫵🏼 BONUS ESPECIAL 1: Sesión estratégica 1a1 con Alex y Gonza
           <span class="icon">+</span>
         </button>
         <div class="accordion-content">
@@ -709,7 +717,7 @@
     
       <div class="accordion-item">
         <button class="accordion-btn">
-          🗓️ BONUS AR2: Calendario de Contenidos IG (30 días)
+          🗓️ BONUS ESPECIAL 2: Calendario de Contenidos IG (30 días)
           <span class="icon">+</span>
         </button>
         <div class="accordion-content">
@@ -719,7 +727,7 @@
     
       <div class="accordion-item">
         <button class="accordion-btn">
-          💬 BONUS AR3: Secuencias de venta para Stories
+          💬 BONUS ESPECIAL 3: Secuencias de venta para Stories
           <span class="icon">+</span>
         </button>
         <div class="accordion-content">
@@ -727,7 +735,7 @@
         </div>
       </div>
 
-      <a class="cta" href="https://calendly.com/hbathletes/entrevista-inicial-elite-fit" style="width: 100%;">Quiero entrar</a>
+      <a class="cta" href="https://calendly.com/hbathletes/entrevista-inicial-elite-fit" style="width: 100%;">Reservar entrevista inicial</a>
 
     </div>
 
@@ -751,7 +759,7 @@
       <span style="color: #02AFFF;">OFERTA LANZAMIENTO PRIMERA EDICIÓN: 697€ </span>
     </p>
 
-    <a class="cta" href="https://calendly.com/hbathletes/entrevista-inicial-elite-fit" style="max-width: 56.4rem;">Quiero entrar</a>
+    <a class="cta" href="https://calendly.com/hbathletes/entrevista-inicial-elite-fit" style="max-width: 56.4rem;">Reservar entrevista inicial</a>
 
   </section>
 
@@ -777,7 +785,7 @@
       </div>      
     </div>
 
-    <a class="cta" href="https://calendly.com/hbathletes/entrevista-inicial-elite-fit">Quiero entrar</a>
+    <a class="cta" href="https://calendly.com/hbathletes/entrevista-inicial-elite-fit">Reservar entrevista inicial</a>
    </section>
 
 
@@ -830,14 +838,12 @@
       <p>Acceso exclusivo al sistema con el que pasamos de 2 a más de 100 clientes con el que decenas de entrenadores han dejado de depender de su trabajo por cuenta ajena y vivir 100% de sus asesorías online</p>
       <div style="width: 100%; border: 1px solid rgb(53, 53, 53);"></div>
       <p style="color: #02AFFF;">Los principios que compartimos en esta formación no los enseñamos en ningún otro canal. Y lo que aprendas aquí puede ser el punto de inflexión que te faltaba para despegar de verdad.</p>
-      <div class="contador-container"><p id="contador"></p></div>
-
-      <a class="cta" href="https://calendly.com/hbathletes/entrevista-inicial-elite-fit" style="width: 100%;">Quiero entrar</a>
+      <a class="cta" href="https://calendly.com/hbathletes/entrevista-inicial-elite-fit" style="width: 100%;">Reservar entrevista inicial</a>
     </section>
 
     <!-- FOOTER -->
      <footer>
-      <p>H Barrio Atheltes, S.L | Copyright © <br>Todos los Derechos Reservados 2025</p>
+      <p>H Barrio Athletes, S.L | Copyright © <br>Todos los Derechos Reservados 2025</p>
       <div>
         <a style="text-decoration: none; color: rgb(79, 79, 79);" href="http://hbarrio.com/index.php/politica-de-privacidad/">Política de Privacidad</a>
         <p>Aviso Legal</p>
