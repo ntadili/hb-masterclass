@@ -37,7 +37,7 @@
     /* HEADER */
     header{
       height: fit-content;
-      padding: 4%;
+      padding: 2% 4% 4% 4%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -368,8 +368,45 @@
         font-size: 1.2rem !important;
         margin-bottom: 0px !important;
       }
+
+      .logo-div{
+        margin-top: -10px;
+        margin-bottom: -5px !important;
+      }
+
+      .logo-div div img{
+        width: 80px !important;
+      }
+
+      .announce{
+        font-size: 0.9rem;
+      }
     }
 
+    .logo-div{
+      width: fit-content;
+      height: 20px;
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 7px;
+
+      margin-bottom: 30px;
+    }
+
+    .logo-div div img{
+      width: 90px;
+    }
+
+    .announce{
+      text-align: center;
+      background-color: hsl(55, 94%, 58%);
+      color: black;
+      padding-top: 3px;
+
+      margin-top: -15px;
+    }
   </style>
 </head>
 
@@ -378,16 +415,28 @@
     <img src="./resources/images/image-background.png" alt="Imagen de fondo">
   </div>
   
+  <div class="announce"><p>🚨 LAS PLAZAS DE LA ACADEMIA YA ESTÁN ABIERTAS! RESERVA YA TU ENTREVISTA</p></div>
+  
   <header>
 
-    <div class="contador-container" style="color: #9a9a9a;">El replay dejará de estar disponible en: <p id="contador" style="color: #f4ff7d; font-weight: bolder; font-size: 1.5rem; margin-top: 4px;"></p></div>
-    <script src="./contador.js"></script>
+    <div class="logo-div">
+      <div><img src="./resources/images/elite fit.png" alt="logo"></div>
+      <div><img src="./resources/images/academy.png" alt="logo2"></div>
+    </div>
 
     <div class="title"><h1>Descubre cómo convertirte en un entrenador online de élite con el mismo sistema que hemos utilizado para pasar de <span style="color: #02AFFF;">2 a +100 clientes</span></h1></div>
-    <h2 style="font-size: 1rem; color: #f4ff7d; margin-top: 0px;">Sin anuncios ni estrategias complejas.</h2>
+    <h2 style="font-size: 1rem; color: #ffea2d; margin-top: 0px;">Sin anuncios ni estrategias complejas.</h2>
 
-    <div style="width: 100%; height: 500px; background-color: black;" class="video-wrapper-container">
-      <div class="vimeo-responsive" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1089049538?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="DIRECTO"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    <div class="video-wrapper-container">
+      <div class="vimeo-responsive">
+        <iframe src="https://player.vimeo.com/video/1086358088?title=0&byline=0&portrait=0&dnt=1&badge=0&autopause=0"
+        frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowfullscreen
+        style="position:absolute;top:0;left:0;width:100%;height:100%;"
+        title="presentation">
+      </iframe>      
+      </div>
     </div>
     
     <script src="https://player.vimeo.com/api/player.js"></script>
@@ -745,14 +794,28 @@
               <iframe id="iframe-0" src="https://player.vimeo.com/video/1086491804?h=fe74348135&badge=0&autopause=0&player_id=player0&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="INIGO"></iframe>
             </div>
           </div>
+
           <div class="video" id="video-1" style="display:none">
             <div style="padding:177.78% 0 0 0;position:relative;">
               <iframe id="iframe-1" src="https://player.vimeo.com/video/1086490130?h=4867872d0c&badge=0&autopause=0&player_id=player1&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="ADRI"></iframe>
             </div>
           </div>
+
           <div class="video" id="video-2" style="display:none">
             <div style="padding:177.78% 0 0 0;position:relative;">
               <iframe id="iframe-2" src="https://player.vimeo.com/video/1086491074?h=d5306589ca&badge=0&autopause=0&player_id=player2&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="MARCOS"></iframe>
+            </div>
+          </div>
+
+          <div class="video" id="video-3" style="display:none;">
+            <div style="padding:177.78% 0 0 0;position:relative;">
+              <iframe id="iframe-3" src="https://player.vimeo.com/video/1090364568?h=507a5402b7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="DIEGO"></iframe>
+            </div>
+          </div>
+
+          <div class="video" id="video-4" style="display:none;">
+            <div style="padding:177.78% 0 0 0;position:relative;">
+              <iframe id="iframe-4" src="https://player.vimeo.com/video/1090369427?h=ae1dc02fbc&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="JIMMY"></iframe>
             </div>
           </div>
         
@@ -789,6 +852,7 @@
    
 </body>
 <script src="./testimonios.js"></script>
+
 <script src="https://player.vimeo.com/api/player.js"></script>
 
 <script>

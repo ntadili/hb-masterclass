@@ -1,5 +1,5 @@
 let current = 0;
-const total = 3;
+const total = 5;
 
 function showVideo(index) {
   for (let i = 0; i < total; i++) {
