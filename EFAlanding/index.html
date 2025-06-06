@@ -320,7 +320,16 @@
         width: 56.4rem;
       }
 
-
+      .new-h2{
+        font-size: 1.3rem !important;
+        font-weight: 500 !important;
+      }
+      .new-h2 span{
+        font-size: 1.1rem !important;
+      }
+      .new-h2 .display-none{
+        display: block;
+      }
     }
 
     /* MOBILE SCREENS */
@@ -422,6 +431,20 @@
       margin-top: 7px;
       height: 25px;
     }
+
+
+
+    .new-h2{
+      font-size: 1rem; 
+      color: #ffffff; 
+      margin-top: 0px; 
+      font-weight: bolder;
+    }
+
+    .new-h2 span{
+      font-size: 0.97rem; 
+      font-weight: 100
+    }
   </style>
 </head>
 
@@ -440,7 +463,17 @@
     </div>
 
     <div class="title"><h1>Desbloquea el sistema que te lleva <span style="color: #02AFFF;">de 0 a vivir (bien)</span> de tus asesorías online</h1></div>
-    <h2 style="font-size: 1rem; color: #ffea2d; margin-top: 0px;">Sin anuncios ni estrategias complejas.</h2>
+    <!-- <h2 style="font-size: 1rem; color: #ffea2d; margin-top: 0px;">Sin anuncios ni estrategias complejas.</h2> -->
+    <h2 class="new-h2">+Bonus sorpresa solo este finde: <br>
+     <span>Masterclass exclusiva con David Marchante: <br class="display-none">
+      "De 0 a 100, conviértete en referente en tu nicho”</span>
+    </h2>
+
+    <div class="contador-container" style="display: flex; gap: 4px; margin-top: 0; color: rgb(255, 230, 0); font-weight: bolder; font-size: 1.1rem;">
+      (
+      <p class="contador" id="contador-header" style="margin: 0;"></p>
+      <p style="margin: 0;">- Domingo 23:59 )</p>
+    </div>
 
     <div class="video-wrapper-container">
       <div class="vimeo-responsive">
@@ -735,6 +768,22 @@
         </div>
       </div>
 
+      <div class="accordion-item" style="border: 3px solid yellow;">
+        <button class="accordion-btn">
+          🎁 BONUS SORPRESA – (Solo este finde) 
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>Masterclass exclusiva con David Marchante: “De 0 a 100: conviértete en referente en tu nicho” ¿Te gustaría dejar de ser uno más en redes y convertirte en una autoridad real en tu sector? David lo consiguió. Primero en el fitness, después como empresario de alto nivel.
+            <br><br>
+            En esta masterclass EN DIRECTO, David te va a enseñar exactamente: <br>
+            ✅ Cómo construir autoridad de verdad, desde cero <br>
+            ✅ Cómo posicionarte con fuerza, aunque el sector esté saturado <br>
+            ✅ Qué decisiones marcaron la diferencia en su propio camino <br>
+            ✅ Cómo dar el salto a otro nivel, sin necesidad de ser viral</p>
+        </div>
+      </div>
+
       <a class="cta" href="https://calendly.com/hbathletes/entrevista-inicial-elite-fit" style="width: 100%;">Reservar entrevista inicial</a>
 
     </div>
@@ -877,6 +926,7 @@
     });
   });
 </script>
+<script src="./contador.js"></script>
 
 
 </html>

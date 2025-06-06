@@ -1,5 +1,5 @@
       // Set the date we're counting down to
-      var countDownDate = new Date(Date.UTC(2025, 5, 3, 21, 59, 0)).getTime();
+      var countDownDate = new Date(Date.UTC(2025, 5, 8, 21, 59, 0)).getTime();
 
   
       // Update the count down every 1 second
@@ -18,7 +18,7 @@
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
           
         // Output the result in an element with id="demo"
-        document.getElementById("contador").innerHTML = hours + "h "
+        document.getElementById("contador").innerHTML = days + "d " + hours + "h "
         + minutes + "m " + seconds + "s ";
           
         // If the count down is over, write some text 
@@ -33,7 +33,7 @@
       // CONTANDOR HEADER
 
       // Set the date we're counting down to
-      var countDownDate = new Date(Date.UTC(2025, 5, 3, 21, 59, 0)).getTime();
+      var countDownDate = new Date(Date.UTC(2025, 5, 8, 21, 59, 0)).getTime();
   
       // Update the count down every 1 second
       var x = setInterval(function() {
@@ -51,7 +51,7 @@
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
           
         // Output the result in an element with id="demo"
-        document.getElementById("contador-header").innerHTML = hours + "h "
+        document.getElementById("contador-header").innerHTML = days + "d " + hours + "h "
         + minutes + "m " + seconds + "s ";
           
         // If the count down is over, write some text 
