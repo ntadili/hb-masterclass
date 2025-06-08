@@ -445,6 +445,55 @@
       font-size: 0.97rem; 
       font-weight: 100
     }
+
+
+/*  CONTADOR NEWLY */
+
+.contador-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  color: white;
+  font-family: 'SF Font', sans-serif;
+}
+
+.countdown-wrapper {
+  display: flex;
+  gap: 15px;
+  text-align: center;
+}
+
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown-number {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffea2d;
+}
+
+.countdown-label {
+  font-size: 0.7rem;
+  color: #9a9a9a;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .countdown-wrapper {
+    gap: 8px;
+  }
+  .countdown-number {
+    font-size: 1.4rem;
+  }
+  .countdown-label {
+    font-size: 0.6rem;
+  margin-top: 2px;
+  }
+}
   </style>
 </head>
 
@@ -469,11 +518,27 @@
       "De 0 a 100, conviértete en referente en tu nicho”</span>
     </h2>
 
-    <div class="contador-container" style="display: flex; gap: 4px; margin-top: 0; color: rgb(255, 230, 0); font-weight: bolder; font-size: 1.1rem;">
-      (
-      <p class="contador" id="contador-header" style="margin: 0;"></p>
-      <p style="margin: 0;">- Domingo 23:59 )</p>
+<!-- HTML -->
+<div class="countdown-container">
+  <div class="countdown-wrapper">
+    <div class="countdown-item">
+      <span class="countdown-number" id="countdown-days"></span>
+      <span class="countdown-label">DÍAS</span>
     </div>
+    <div class="countdown-item">
+      <span class="countdown-number" id="countdown-hours"></span>
+      <span class="countdown-label">HORAS</span>
+    </div>
+    <div class="countdown-item">
+      <span class="countdown-number" id="countdown-minutes"></span>
+      <span class="countdown-label">MIN</span>
+    </div>
+    <div class="countdown-item">
+      <span class="countdown-number" id="countdown-seconds"></span>
+      <span class="countdown-label">SEG</span>
+    </div>
+  </div>
+</div>
 
     <div class="video-wrapper-container">
       <div class="vimeo-responsive">
