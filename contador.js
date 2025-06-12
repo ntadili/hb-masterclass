@@ -68,7 +68,7 @@
 // JavaScript corregido
 function getSpainTimeDate() {
   // Hora objetivo: 8 de junio 2025, 23:59 hora de España (CEST, UTC+2)
-  const targetDate = new Date(Date.UTC(2025, 5, 8, 21, 59, 0)); // 23:59 CEST = 21:59 UTC
+  const targetDate = new Date(Date.UTC(2025, 5, 12, 21, 59, 0)); // 23:59 CEST = 21:59 UTC
   return targetDate.getTime();
 }
 

@@ -494,7 +494,7 @@
     margin-top: 2px;
   }
 }
-
+/* 
   .unete-div {
     margin-top: 60px;
     background: linear-gradient(270deg, #25D366, #128C7E, #25D366);
@@ -520,11 +520,76 @@
   .unete-cta{
     text-decoration: none;
     color: white;
-  }
+  } */
   @keyframes whatsappGradient {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
+  }
+
+
+  /* WhatsApp Contact Section */
+  .whatsapp-link {
+    text-decoration: none;
+    display: block;
+  }
+
+  .whatsapp-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #25d366;
+    color: white;
+    padding: 22px 26px;
+    border-radius: 16px;
+    margin: 40px auto;
+    width: 80%;
+    max-width: 680px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    gap: 16px;
+    font-weight: 500;
+    flex-wrap: nowrap;
+  }
+
+  .whatsapp-contact p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+    flex: 1;
+    text-align: left;
+  }
+
+  .whatsapp-link img {
+    height: 52px;
+    width: 52px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.2));
+    border-radius: 12px;
+  }
+
+  .whatsapp-link img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.3));
+  }
+
+  /* Responsive for small screens */
+  @media (max-width: 500px) {
+    .whatsapp-contact {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .whatsapp-contact p {
+      font-size: 1rem;
+      text-align: left;
+    }
+
+    .whatsapp-link img {
+      height: 44px;
+      width: 44px;
+    }
   }
 
   </style>
@@ -551,27 +616,27 @@
       "De 0 a 100, conviértete en referente en tu nicho”</span>
     </h2> -->
 
-<!-- CONTADOR -->
-<!-- <div class="countdown-container">
-  <div class="countdown-wrapper">
-    <div class="countdown-item">
-      <span class="countdown-number" id="countdown-days"></span>
-      <span class="countdown-label">DÍAS</span>
+    <!-- CONTADOR -->
+    <div class="countdown-container">
+      <div class="countdown-wrapper">
+        <div class="countdown-item">
+          <span class="countdown-number" id="countdown-days"></span>
+          <span class="countdown-label">DÍAS</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-number" id="countdown-hours"></span>
+          <span class="countdown-label">HORAS</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-number" id="countdown-minutes"></span>
+          <span class="countdown-label">MIN</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-number" id="countdown-seconds"></span>
+          <span class="countdown-label">SEG</span>
+        </div>
+      </div>
     </div>
-    <div class="countdown-item">
-      <span class="countdown-number" id="countdown-hours"></span>
-      <span class="countdown-label">HORAS</span>
-    </div>
-    <div class="countdown-item">
-      <span class="countdown-number" id="countdown-minutes"></span>
-      <span class="countdown-label">MIN</span>
-    </div>
-    <div class="countdown-item">
-      <span class="countdown-number" id="countdown-seconds"></span>
-      <span class="countdown-label">SEG</span>
-    </div>
-  </div>
-</div> -->
 
     <div class="video-wrapper-container">
       <div class="vimeo-responsive">
@@ -977,15 +1042,16 @@
       </p>
       
       <a class="cta" href="https://calendly.com/hbathletes/entrevista-inicial-elite-fit" style="width: 100%;">Reservar entrevista inicial</a>
-
-      <a class="unete-cta" href="https://chat.whatsapp.com/LulDKKOH1KwLJk72nAzVx0">
-        <div class="unete-div" style="text-align: center;">
-          <p>Únete a nuestra comunidad de Whatsapp</p>
-          +700 entrenadores ya están dentro
-        </div>
-      </a>
     </section>
 
+    <!-- SECTION: Contact WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=+34646486320&text=Hola!%20Me%20estoy%20pensando%20si%20entrar%20en%20Elite%20Fit%20Academy%20pero" target="_blank" class="whatsapp-link">
+      <div class="whatsapp-contact">
+        <p style="font-weight: 600;">¿Tienes dudas? <strong>Contáctanos aquí</strong> y las resolvemos inmediatamente</p>
+        <img src="./resources/images/whatsapp.png" alt="WhatsApp" />
+      </div>
+    </a>
+    
     <!-- FOOTER -->
      <footer>
       <p>H Barrio Athletes, S.L | Copyright © <br>Todos los Derechos Reservados 2025</p>
